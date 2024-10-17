@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Datos Radicados</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="clinica-de-salud.png" type="image/x-icon">
+</head>
+<body>
+    <header class="head">
+        <div class="logo">
+            <img src="./LogoClinica.png" alt="logo">
+        </div>
+        <h2 id="titulo">Clínica Central del Quindío</h2>
+    </header>
+    <main id="mxin">
+        <h1>Tabla de Radicación</h1>
+  
+        <div class="containerFilters">
+            <div class="esp">
+                <h4>Filtrar por Especialidad: </h4>
+                <select name="Especialidad" id="Especialidad" required>
+                    <option value="">Seleccione la Especialidad</option>
+                    <option value="133">Cirugía de la Mano</option>
+                    <option value="134">Cirugía de Tórax</option>
+                    <option value="137">Cirugía General</option>
+                    <option value="138">Cirugía Maxilofacial</option>
+                    <option value="143">Cirugía Plástica</option>
+                    <option value="148">Cirugía Vascular</option>
+                    <option value="340">Ginecología Oncológica</option>
+                    <option value="341">Ginecología y Obstetricia</option>
+                    <option value="440">Neurocirugía</option>
+                    <option value="521">Otorrinolaringología</option>
+                    <option value="750">Urología</option>
+                    <option value="Otra">Otra</option>
+                </select>
+            </div>
+            <div class="espx">
+                <h4>Filtrar por Especialista: </h4>
+                <select name="Especialista" id="Especialista" required>
+                    <option value="">Seleccione el Especialista</option>
+                </select>
+            </div>
+            <div class="espx">
+                <h4>Filtrar por Observacion: </h4>
+
+                <select name="Observacion" id="Observacion" required>
+                    <option value="">Seleccione Observación</option>
+                    <option value="ESPERANDO PROGRAMACIÓN">ESPERANDO PROGRAMACIÓN</option>
+                    <option value="NO CONTESTA/APAGADO">NO CONTESTA/APAGADO</option>
+                    <option value="NO SE LA VA A REALIZAR">NO SE LA VA A REALIZAR</option>
+                    <option value="PROGRAMADO">PROGRAMADO</option>
+                    <option value="REALIZADO">REALIZADO</option>
+                </select>
+            </div>
+            
+        </div>
+        <div class="containerFilters">
+                <div class="fech1">
+                    <h4>Filtrar Fecha Desde: </h4>
+                <input type="date" name="fecha1" id="fecha1">
+                </div>
+                <div class="fech2">
+                    <h4>Filtrar Fecha Hasta: </h4>
+                <input type="date" name="fecha2" id="fecha2">
+                </div>
+
+                <div class="clear">
+                    <button id="clearFilters">Limpiar Filtros</button>
+                    <a class="link" href="http://172.30.0.3:83/CCQFormulario/index.html" target="_blank">Registrar Datos</a>
+                </div>
+        </div>
+
+        <div class="containerTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fecha Radicación</th>
+                        <th>Tipo Documento</th>
+                        <th>Documento</th>
+                        <th>Nombre <span>left</span>Paciente<span>left</span></th>
+                        <th>Teléfono 1</th>
+                        <th>Teléfono 2</th>
+                        <th>Cups 1</th>
+                        <th>Cups 2</th>
+                        <th>Cups 3</th>
+                        <th>Otro Cups</th>
+                        <th>Otro Procedimiento</th>
+                        <th>Especialidad</th>
+                        <th><span>left</span>Especialista<span>left</span></th>
+                        <th>EPS</th>
+                        <th>Tipo Contrato</th>
+                        <th>Régimen</th>
+                        <th>Anestesia</th>
+                        <th>Fecha Anestesia</th>
+                        <th>Observación</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer id="ft">
+        <img src='./LogoClinica.png' alt="Logo Clínica" />
+        <div id='copy'>
+            <p>Copyright 2024 &copy; Todos los derechos reservados. Desarrollado por <span>Santiago Castaño</span></p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="a.js"></script>
+</body>
+</html>

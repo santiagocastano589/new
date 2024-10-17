@@ -1,0 +1,793 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root {
+    --bg: #0f8d87;
+    --gr: #0c7973;
+    --rg: #0d5855;
+    --pt: #1aa29d;
+  }
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Afacad Flux", sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+header{
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #0d5855;
+    box-shadow: 3px 3px 10px #a3a3a3;
+    background-color: #f7f7fd;
+}
+
+.logo{
+    width: 15%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 16rem;
+    height: 6rem;
+}
+
+/* ---------------------------------- BODY DE LA PAGINA -------------------------------- */
+
+main{
+    width: 100%;
+    height: auto;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+
+    /* background-color: #f7f7fd;
+opacity: 0.8;
+background-image: radial-gradient(#1aa29d 2px, #f7f7fd 2px);
+background-size: 40px 40px; */
+
+}
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+form{
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 10px;
+}
+.mid{
+    width: 100%;
+    display: flex;
+}
+.one{
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.group{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0.5rem;
+}
+
+.min{
+    width: 100%;
+    margin-top: 20px;
+}
+.box{
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.labels, .data{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.data{
+    width: 60%;
+    background-color: #fff;
+    border-radius: 0 10px 10px 0;
+    box-shadow: -2px 2px 10px 2px #818181;
+}
+.nice{
+    height: 12rem;
+}
+.nice label{
+    padding: 10px;
+    font-size: 18px;
+    height: 50px;
+}
+.nice select, .nice input{
+    height: 50px;
+    font-size: 18px;
+}
+.nice select option{
+    padding: 40px 0;
+}
+
+/* .i{
+    margin-bottom: 80px;
+} */
+.labels{
+    width: 40%;
+    /* background-color: #1aa29d; */
+    background-color: #0f8d87;
+    border-radius: 10px 0 0 10px;
+    color: #fff;
+    font-weight: bold;
+}
+h1{
+    color: #0f8d87;
+}
+h2{
+    color: #0f8d87;
+}
+h3{
+    font-size: 22px;
+    padding: 0.3rem;
+}
+
+
+label, input, select, textarea, .select2{
+    font-size: 17px;
+    height: 40px;
+    width: auto;
+}
+input, select, textarea, .select2{
+    padding: 7px 5px;
+    border: none;
+    border-bottom: 2px solid #000;
+    margin: 0.3rem;
+    background-color: transparent;
+    outline: none;
+    color: #000;
+    transition: all 0.5s;
+    cursor: text;
+}
+.select2 li{
+    color: #000;
+}
+
+select, .date{
+    color: #000;
+}
+
+input:focus, input:hover, select:focus, select:hover, textarea:focus, textarea:hover, .select2:focus, .select2:hover{
+    border-bottom: 2px solid #1aa29d;
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+
+input::placeholder, select::placeholder, textarea::placeholder, .select2::placeholder{
+    color: #000;
+    font-size: 17px;
+}
+label{
+    margin: 0.3rem;
+    font-weight: bold;
+    border-bottom: 2px solid #ffffff;
+    text-shadow: 1px 1px 1px #000;
+}
+
+button{
+    margin-top: 3rem;
+    width: 30%;
+    height: 3rem;
+    font-size: 17px;
+    background-color: #0c7973;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #fff;
+    color: #0f8d87;
+    transition: 0.5s;
+    transform: translateY(-3px);
+    border: 1px solid #0d5855;
+    box-shadow: 3px 3px 15px #b1b1b1;
+}
+
+/* #obs, #Observaciones{
+    height: 6rem;
+    resize: none;
+} */
+
+#comment, #Comentarios{
+    resize: none;
+    height: 3rem;
+}
+
+footer{
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #0d5855;
+    /* box-shadow: -10px -10px 30px #1a6b67; */
+    background-color: #fff;
+}
+
+footer img{
+    width: 20rem;
+    height: 7rem;
+}
+
+#copy{
+    width: 30%;
+    display: flex;
+    text-align: center;
+}
+
+span{
+    color: #0f8d87;
+}
+
+
+/* ------------------------- ESTILOS DE LA VENTANA MODAL ----------------------------- */
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px 40px;
+    border: 1px solid #888;
+    width: 50%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+}
+.botones{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.spamx{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#confirmNo{
+    background-color: red;
+}
+#confirmNo:hover{
+    transition: 0.5s;
+    transform: translateY(-3px);
+    background-color: #fff;
+    color: red;
+    border: 1px solid red;
+}
+
+
+
+/* --------------------------------- TABLE STYLE --------------------------------- */
+
+table{
+    width: 100%;
+    padding: 10px 20px;
+    border-spacing: 0;
+    border: none;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+thead{
+    background-color: #0f8d87;
+    position: sticky; 
+    top: 0; 
+    z-index: 2;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+}
+span{
+    text-shadow: none;
+}
+tr{
+    width: 100%;
+}
+
+th{
+    width: 1%;
+    padding: 2px 4px;
+}
+
+td{
+    padding: 6px 4px;
+    font-size: 14px;
+    border-bottom: 1px solid #b8b8b8;
+}
+
+th:first-child{
+    border-top-left-radius: 7px;
+  }
+  
+th:nth-last-child(1){
+    border-top-right-radius: 7px;
+}
+table:first-child{
+    border-top-left-radius: 7px;
+  }
+  
+table:nth-last-child(1){
+    border-top-right-radius: 7px;
+}
+
+td select{
+    margin: 0;
+    padding: 0;
+    width: 200px;
+}
+
+.containerTable{
+    width: 100%;
+    height: 50vh;
+    max-height: 80vh; 
+    overflow-y: auto;
+
+}
+.containerFilters{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+h4{
+    font-size: 18px;
+    padding: 7px;
+    border-bottom: 2px solid #0c7973;
+}
+
+.esp, .espx{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.fech1{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fech1 input, .fech1 h4{
+    width: 13rem;
+}
+.fech2{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fech2 input{
+    width: 13rem;
+}
+.fech1 h4, .fech2 h4{
+    width: 11rem;
+    text-align: center;
+}
+
+.clear{
+    width: 30%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#clearFilters{
+    margin: 0;
+    width: 12rem;
+    height: 3rem;
+}
+.containerLink{
+    width: 100%;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: end;
+}
+.link{
+    width: 12rem;
+    height: 3rem;
+    background-color: #0c7973;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link:hover{
+    background-color: #fff;
+    color: #0f8d87;
+    transition: 0.5s;
+    transform: translateY(-3px);
+    border: 1px solid #0d5855;
+    box-shadow: 3px 3px 15px #b1b1b1; 
+}
+
+.head{
+    background-color: #fff;
+}
+
+#titulo{
+    color: #0c7973;
+}
+
+/* #ft{
+    background-color: #0d5855;
+    color: #fff;
+} */
+
+
+/* --------------------------------- END TABLE STYLE --------------------------------- */
+
+
+
+/* --------------------------------- MEDIA QUERYS --------------------------------- */
+
+
+@media(max-width: 1279px){
+    header{
+        width: 100%;
+        height: 5rem;
+    }
+    h1{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .logo img{
+        height: 4rem;
+    }
+    form{
+        padding: 5px;
+    }
+    .mid{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .one{
+        width: 80%;
+    }
+    .box{
+        width: 100%;
+    }
+
+    .nice input, .nice select{
+        height: 50px;
+        font-size: 14px;
+    }
+    .nice label{
+        height: 50px;
+        font-size: 15px;
+    }
+    .labels{
+        width: 40%;
+    }
+    .data{
+        width: 60%;
+    }
+    .min{
+        width: 100%;
+        margin-top: 25px;
+        margin-bottom: 0;
+    }
+    label{
+        font-size: 15px;
+    }
+    input, select, textarea{
+        font-size: 14px;
+        padding: 0;
+    }
+    input::placeholder, select::placeholder, textarea::placeholder{
+        font-size: 14px;
+    }
+    footer{
+        height: 4rem;
+    }
+    footer img{
+        height: 3rem;
+        width: 8rem;
+    }
+    #copy{
+        font-size: 11px;
+        text-align: center;
+    }
+    .modal-content{
+        width: 70%;
+    }
+}
+
+@media(max-width:920px){
+    header{
+        height: 4rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .logo{
+        width: 45%;
+    }
+    .logo img{
+        height: 3rem;
+        width: 8rem;
+    }
+    h1{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 17px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    .labels{
+        width: 35%;
+    }
+    .modal-content{
+        width: 70%;
+    }
+    .data{
+        width: 65%;
+    }
+    label{
+        font-size: 14px;
+    }
+    input::placeholder, select::placeholder, textarea::placeholder{
+        font-size: 14px;
+    }
+    .one{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    .group{
+        width: 100%;
+    }
+    button{
+        font-size: 14px;
+        height: 3rem;
+        width: 40%;
+    }
+    #copy{
+        width: 50%;
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 768px){
+    header{
+        height: 4rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .logo{
+        width: 45%;
+    }
+    .logo img{
+        height: 3rem;
+        width: 8rem;
+    }
+    h1{
+        font-size: 23px;
+    }
+    h2{
+        font-size: 17px;
+    }
+    h3{
+        font-size: 17px;
+    }
+    .labels, .data{
+        padding: 12px;
+    }
+    .nice{
+        height: 9rem;
+    }
+    .nice label{
+        padding: 0;
+        font-size: 14px;
+        height: 50px;
+
+    }
+    .nice input, .nice select{
+        font-size: 14px;
+        height: 50px;
+    }
+    .labels{
+        width: 35%;
+    }
+    .data{
+        width: 65%;
+    }
+    label, select, input, textarea{
+        font-size: 14px;
+    }
+    input::placeholder, select::placeholder, textarea::placeholder{
+        font-size: 14px;
+    }
+    .one{
+        width: 97%;
+        display: flex;
+        flex-direction: column;
+    }
+    .modal-content{
+        width: 80%;
+    }
+    .group{
+        width: 100%;
+    }
+    button{
+        font-size: 14px;
+        height: 3rem;
+        width: 40%;
+    }
+    #copy{
+        width: 50%;
+        font-size: 10px;
+    }
+}
+
+@media(max-width:480px){
+    header{
+        height: 4rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .logo{
+        width: 45%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo img{
+        height: 3rem;
+        width: 8rem;
+    }
+    h1{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 16px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    main{
+        padding: 25px 0;
+    }
+    .one{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .group{
+        width: 98%;
+        margin: 10px 0;
+    }
+    .modal-content{
+        width: 90%;
+        padding: 10px 20px;
+    }
+    label{
+        font-size: 12px;
+    }
+    .nice{
+        height: 7rem;
+    }
+    .nice label{
+        font-size: 12px;
+        height: 30px;
+    }
+    .nice input, .nice select{
+        font-size: 12px;
+        height: 30px;
+    }
+    input, select, textarea{
+        font-size: 12px;
+    }
+    input::placeholder, select::placeholder, textarea::placeholder{
+        font-size: 12px;
+    }
+    .labels{
+        width: 35%;
+        padding: 8px;
+    }
+    .data{
+        width: 65%;
+        padding: 8px;
+    }
+    .min{
+        width: 100%;
+        margin-top: 20px;
+    }
+    button{
+        width: 45%;
+        height: 3rem;
+        font-size: 15px;
+    }
+    #copy{
+        width: 50%;
+        font-size: 10px;
+    }
+}
+
+
+

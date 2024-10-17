@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Radicación</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="registro-de-vacunas.png" type="image/x-icon">
+    
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./LogoClinica.png" alt="logo">
+        </div>
+        <h2>Clínica Central del Quindío</h2>
+    </header>
+    <main>
+        <h1>Formulario de Radicación</h1>
+        <div class="containerLink">
+            <a class="link" href="http://172.30.0.3:83/CCQFormulario/actualizar.html" target="_blank">Consultar Datos Radicados</a>
+        </div>
+
+        <div class="container">
+            <form action="registro.php" method="POST" id="formulario">
+                <div class="mid">
+                    <div class="one">
+                        <div class="group i">
+                            <h3>Datos de Radicación</h3>
+                            <div class="box">
+                                <div class="labels nice">
+                                    <label for="FecRadi">Fecha de Radicación</label>
+                                    <label for="Radicador">ID del Radicador</label>
+                                </div>
+                                <div class="data nice">
+                                    <input type="date" name="FecRadi" id="date" class="date" required>
+                                    <select name="Radicador" id="idRadicador" required>
+                                        <option value="">Seleccione el ID del Radicador</option>
+                                        <option value="1">DANIELA NARVAEZ</option>
+                                        <option value="2">MARÍA PAULA TORREZ</option>
+                                    </select>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group">
+                            <h3>Datos del Paciente</h3>
+                            <div class="box">
+                                <div class="labels">
+                                    <label for="TipoDocumento">Tipo de Documento</label>
+                                    <label for="Documento">Documento</label>
+                                    <label for="NombrePaciente">Nombre del Paciente</label>
+                                    <label for="Telefono1">Número de Teléfono 1</label>
+                                    <label for="Telefono2">Número de Teléfono 2</label>
+                                    <label for="EPS">EPS</label>
+                                    <label for="Regimen">Régimen</label>
+                                    <label for="TipoContrato">Tipo de Contrato</label>
+                                </div>
+                                <div class="data">
+                                    <select name="TipDoc" id="TipoDocumento" required>
+                                        <option value="">Seleccione el Tipo de Documento</option>
+                                        <option value="RC">Registro Civil (RC)</option>
+                                        <option value="TI">Tarjeta de Identidad (TI)</option>
+                                        <option value="CC">Cédula de Ciudadanía (CC)</option>
+                                        <option value="TE">Tarjeta de Extranjería (TE)</option>
+                                        <option value="CE">Cédula de Extranjería (CE)</option>
+                                        <option value="DE">Documento Extranjero (DE)</option>
+                                        <option value="PA">Pasaporte (PA)</option>
+                                        <option value="SC">Salvoconducto (SC)</option>
+                                        <option value="CD">Diplomático Carné (CD)</option>
+                                        <option value="PE">Permiso Especial de Permanencia (PE)</option>
+                                        <option value="PT">Permiso por Protección Temporal (PT)</option>                           
+                                        <option value="NU">Número Único de Identificación (NU)</option>
+                                    </select>
+                                    <input type="text" name="Documento" id="Documento" placeholder="Ingrese Número de Documento" maxlength="10" size="10" required>
+                                    <input type="text" name="Paciente" id="NombrePaciente" placeholder="Ingrese Nombre del Paciente" required>
+                                    <input type="number" name="Tel1" id="Telefono1" placeholder="Ingrese Teléfono 1" required>
+                                    <input type="number" name="tel2" id="Telefono2" placeholder="Ingrese Teléfono 2">
+                                    <select name="Eps" id="EPS" required>
+                                        <option value="">Seleccione EPS</option>
+                                        <option value="AsmetSalud">AsmetSalud</option>
+                                        <option value="Coomeva">Coomeva</option>
+                                        <option value="Famisanar">Famisanar</option>
+                                        <option value="Medplús Medicina Prepagada">Medplús Medicina Prepagada</option>
+                                        <option value="Nueva EPS">Nueva EPS</option>
+                                        <option value="Salud Total">Salud Total</option>
+                                        <option value="SaludVida">SaludVida</option>
+                                        <option value="Sanitas">Sanitas</option>
+                                        <option value="Sura">Sura</option>
+                                    </select>
+                                    <select name="Regimen" id="Regimen" required>
+                                        <option value="">Seleccione Régimen</option>
+                                        <option value="C">Contributivo</option>
+                                        <option value="S">Subsidiado</option>
+                                    </select>
+                                    <select name="TipoContrato" id="TipoContrato" required>
+                                        <option value="">Seleccione el Tipo de Contrato</option>
+                                        <option value="EVENTO">EVENTO</option>
+                                        <option value="P&P">P&P</option>
+                                    </select> 
+                                </div>
+                            </div>               
+                        </div>   
+                        <div class="group i">
+                            <h3>Datos del Especialista</h3>
+                            <div class="box">
+                                <div class="labels nice">
+                                    <label for="Especialidad">Especialidad</label>
+                                    <label for="Especialista">Especialista</label>
+                                </div>
+                                <div class="data nice">
+                                    <select name="Esp" id="Especialidad" required>
+                                        <option value="">Seleccione la Especialidad</option>
+                                        <option value="133">Cirugía de la Mano</option>
+                                        <option value="134">Cirugía de Tórax</option>
+                                        <option value="137">Cirugía General</option>
+                                        <option value="138">Cirugía Maxilofacial</option>
+                                        <option value="143">Cirugía Plástica</option>
+                                        <option value="148">Cirugía Vascular</option>
+                                        <option value="340">Ginecología Oncológica</option>
+                                        <option value="341">Ginecología y Obstetricia</option>
+                                        <option value="440">Neurocirugía</option>
+                                        <option value="521">Otorrinolaringología</option>
+                                        <option value="750">Urología</option>
+                                        <option value="Otra">Otra</option>
+                                    </select>
+                                    <select name="Especialista" id="Especialista" placeholder="Ingrese Especialista" required>
+                                        <option value="">Seleccione el Especialista</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="one">
+                        <div class="group">
+                            <h3>Datos del Procedimiento</h3>
+                            <div class="box">
+                                <div class="labels">
+                                    <label for="Cups1">CUPS 1</label>
+                                    <label for="Procedimiento1">Nombre del Procedimiento</label>
+                                    <label for="Cups2">CUPS 2</label>
+                                    <label for="Procedimiento2">Nombre del Procedimiento</label>
+                                    <label for="Cups3">CUPS 3</label>
+                                    <label for="Procedimiento3">Nombre del Procedimiento</label>
+                                    <label for="Cups4">CUPS 4</label>
+                                    <label for="Procedimiento4">Nombre del Procedimiento</label>
+                                    <label for="Cups5">CUPS 5</label>
+                                    <label for="Procedimiento5">Nombre del Procedimiento</label>
+                                    <label for="OtroCups">Otro CUPS</label>
+                                    <label for="OtroProcedimiento">Nombre del Procedimiento</label>
+                                </div>
+                                <div class="data">
+                                    <input type="text" name="Cups1" id="Cups1" placeholder="Ingrese CUPS 1" required>
+                                    <input type="text" name="Procedimiento1" id="Procedimiento1" placeholder="Nombre del Procedimiento" disabled>
+                                    <input type="text" name="Cups2" id="Cups2" placeholder="Ingrese CUPS 2">
+                                    <input type="text" name="Procedimiento2" id="Procedimiento2" placeholder="Nombre del Procedimiento" disabled>
+                                    <input type="text" name="Cups3" id="Cups3" placeholder="Ingrese CUPS 3">
+                                    <input type="text" name="Procedimiento3" id="Procedimiento3" placeholder="Nombre del Procedimiento" disabled>
+                                    <input type="text" name="Cups4" id="Cups4" placeholder="Ingrese CUPS 4">
+                                    <input type="text" name="Procedimiento4" id="Procedimiento4" placeholder="Nombre del Procedimiento" disabled>
+                                    <input type="text" name="Cups5" id="Cups5" placeholder="Ingrese CUPS 5">
+                                    <input type="text" name="Procedimiento5" id="Procedimiento5" placeholder="Nombre del Procedimiento" disabled>
+                                    <input type="text" name="OtroCups" id="CupsN" placeholder="Ingrese Otro CUPS">
+                                    <input type="text" name="OtroProcedimiento" id="OtroProcedimiento" placeholder="Otro Procedimiento">                                  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group">
+                            <h3>Datos de Anestesia</h3>
+                            <div class="box">
+                                <div class="labels">
+                                    <label for="Anestesia">Anestesia</label>
+                                    <label for="FecAnestesia">Fecha de Anestesia</label>
+                                </div>
+                                <div class="data">                                    
+                                    <select name="Anestesia" id="Anestesia" placeholder="Seleccione tipo de Anestesia">
+                                        <option value="">Seleccione Anestesia</option>
+                                        <option value="ASA I">ASA I</option>
+                                        <option value="ASA II">ASA II</option>
+                                        <option value="ASA III">ASA III</option>
+                                        <option value="ANESTESIA LOCAL">ANESTESIA LOCAL</option>
+                                    </select>
+                                    <input type="date" name="FecAnestesia" id="FecAnestesia">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group">
+                            <h3>Otros Datos</h3>
+                            <div class="box">
+                                <div class="labels">
+                                    <label for="Observacion">Observaciones</label>
+                                    <label for="Comentarios" id="comment">Comentarios</label>
+                                </div>
+                                <div class="data">                                    
+                                    <select name="Observacion" id="Observacion" required>
+                                        <option value="">Seleccione Observación</option>
+                                        <option value="ESPERANDO PROGRAMACIÓN">ESPERANDO PROGRAMACIÓN</option>
+                                        <option value="NO CONTESTA/APAGADO">NO CONTESTA/APAGADO</option>
+                                        <option value="NO SE LA VA A REALIZAR">NO SE LA VA A REALIZAR</option>
+                                        <option value="PROGRAMADO">PROGRAMADO</option>
+                                        <option value="REALIZADO">REALIZADO</option>
+                                    </select>
+                                    <textarea name="Comentarios" id="Comentarios" placeholder="Ingrese Comentarios"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button>Registrar Datos</button>
+                   
+            </form>
+            <!-- Modal de Confirmación -->
+                <div id="confirmModal" class="modal">
+                    <div class="modal-content">
+                        <div class="spamx">
+                            <span class="close" id="closeConfirm">&times;</span>
+                        </div>
+                        <h2>Confirmación</h2>
+                        <p>¿Está seguro de que desea registrar los datos?</p>
+                        <div class="botones">
+                            <button id="confirmYes">Sí, registrar</button>
+                            <button id="confirmNo">No, cancelar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal de Éxito -->
+                <div id="successModal" class="modal">
+                    <div class="modal-content">
+                        <h2>Gracias por confirmar el registro</h2>
+                        <p>Los datos se enviaran una vez se haga click en el boton de <span>Aceptar</span></p>
+                        <button id="okSuccess">Aceptar</button>
+                    </div>
+                </div>          
+        </div>
+    </main>
+    <footer>
+        <img src='./LogoClinica.png' alt="Logo Clínica" />
+        <div id='copy'>
+            <p>Copyright 2024 &copy; Todos los derechos reservados. Desarrollado por <span>Santiago Castaño</span></p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        async function fetchProcedimiento(cups, procedimientoFieldId) {
+            if (cups) {
+                const response = await fetch(`cups.php?cups=${cups}`);
+                const data = await response.json();
+                if (data && data.Procedimiento) {
+                    document.getElementById(procedimientoFieldId).value = data.Procedimiento;
+                } else {
+                    document.getElementById(procedimientoFieldId).value = '';
+                }
+            } else {
+                document.getElementById(procedimientoFieldId).value = '';
+            }
+        }
+        
+        document.getElementById('Cups1').addEventListener('input', function() {
+            fetchProcedimiento(this.value, 'Procedimiento1');
+        });
+        document.getElementById('Cups2').addEventListener('input', function() {
+            fetchProcedimiento(this.value, 'Procedimiento2');
+        });
+        document.getElementById('Cups3').addEventListener('input', function() {
+            fetchProcedimiento(this.value, 'Procedimiento3');
+        });
+        document.getElementById('Cups4').addEventListener('input', function() {
+            fetchProcedimiento(this.value, 'Procedimiento4');
+        });
+        document.getElementById('Cups5').addEventListener('input', function() {
+            fetchProcedimiento(this.value, 'Procedimiento5');
+        });
+ 
+    </script>
+
+
+</body>
+</html>
+
+
+
+
